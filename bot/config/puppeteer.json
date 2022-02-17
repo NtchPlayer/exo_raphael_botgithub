@@ -1,0 +1,15 @@
+{
+  "baseUrl": "https://github.com/",
+  "username": "John",
+  "type": "users",
+  "number_page": 5,
+  "settings": {
+    "headless": false
+  },
+  "selectors": {
+    "btn_login": "//a[contains(text(), 'Sign in')]",
+    "username_field": "input[type='text']",
+    "password_field": "input[type='password']",
+    "login_button": "input[type='submit']"
+  }
+}
