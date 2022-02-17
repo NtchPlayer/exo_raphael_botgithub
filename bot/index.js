@@ -34,11 +34,10 @@ class GithubBot{
     await this.page.focus(this.config.selectors.password_field)
     await this.page.keyboard.type(this.creds.password)
 
-    // await this.page.waitForTimeout(1500)
-    // // On entre le clique sur le button de connexion
-    // await this.page.click(this.config.selectors.login_button)
-    //
-    // await this.page.waitForNavigation()
+    await this.page.waitForTimeout(1500)
+    // On entre le clique sur le button de connexion
+    await this.page.click(this.config.selectors.login_button)
+    await this.page.waitForTimeout(3000)
   }
 
   async visitPage () {
